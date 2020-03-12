@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.tencent.qcloud.tim.uikit.component.TitleBarLayout
+        android:id="@+id/group_list_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_title_height" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <TextView
+        android:text="功能开发中（你可将加入黑名单但这里不会显示）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

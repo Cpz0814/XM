@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.tencent.qcloud.tim.uikit.component.TitleBarLayout
+        android:id="@+id/add_friend_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_title_height" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext_login"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text=" 对 方 ID："
+            android:textSize="13dp"
+            android:textColor="@android:color/black"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入账号"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext_login"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="验证信息："
+            android:textSize="13dp"
+            android:textColor="@android:color/black"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/add_wording"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入验证信息"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:layout_marginLeft="@dimen/btn_margin_left"
+        android:layout_marginRight="@dimen/btn_margin_right"
+        android:background="@color/bg_negative_btn"
+        android:text="@string/contact_add"
+        android:onClick="add"
+        android:textColor="#fb6155" />
+
+</LinearLayout>

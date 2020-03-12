@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.txim">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tb"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tb"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LlActivity"></activity>
+        <activity android:name=".activity.Mmactivity" />
+        <activity android:name=".activity.ZhuCeActivity" /> <!-- 主界面 -->
+        <activity android:name=".activity.TalkActivity" /> <!-- 聊天界面 -->
+        <activity android:name=".activity.ChatActivity" />
+        <activity android:name=".SplashActivity" /> <!-- 新的联系人界面 -->
+        <activity android:name=".HY.NewFriend" /> <!-- 好友资料界面 -->
+        <activity android:name=".activity.FriendActivity" /> <!-- 添加好友，添加群组页面 -->
+        <activity android:name=".activity.AddMoreActivity" /> <!-- 创建讨论组，创建群聊界面 -->
+        <activity android:name=".activity.StartGroupChatActivity" /> <!-- 我的群聊页面 -->
+        <activity android:name=".activity.QlActivity" /> <!-- 黑名单页面 -->
+        <activity android:name=".activity.HmdActivity" /> <!-- 登录界面 -->
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
